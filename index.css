@@ -24,6 +24,40 @@ header {
     left: 1%;
     margin-bottom: 30px;
 }
+.loader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bar {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    animation: scale-up4 1s linear infinite;
+  }
+  
+  .bar:nth-child(2) {
+    height: 35px;
+    margin: 0 5px;
+    animation-delay: .25s;
+  }
+  
+  .bar:nth-child(3) {
+    animation-delay: .5s;
+  }
+  
+  @keyframes scale-up4 {
+    20% {
+      background-color: #ffff;
+      transform: scaleY(1.5);
+    }
+  
+    40% {
+      transform: scaleY(1);
+    }
+  }
 
 div ul {
     margin: 0%;
@@ -775,6 +809,7 @@ input[type="submit"]:hover {
     background-color: #53504e;
 }
 
+
 @media (max-width: 868px) {
     .sendmail {
         flex-direction: column;
@@ -859,4 +894,65 @@ footer {
     padding: 10px; /* Add padding for spacing inside the border */
     margin: 10px; /* Add margin to separate the feature boxes */
   }
+  /* === removing default button style ===*/
+.button {
+    margin: 0;
+    margin-top: 6%;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
   
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: #ADD8E6;
+    --animation-color: #d885e2;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  @media (max-width: 800px) {
+    .button {
+        --fs-size: 1.5em;
+        margin-top: 8%;
+    }
+  }
+  @media (max-width: 700px) {
+    .button {
+        --fs-size: 1.3em;
+        margin-top: 10%;
+    }
+  }
+  @media (max-width: 550px) {
+    .button {
+        --fs-size: 1em;
+        margin-top: 10%;
+    }
+  }
+

@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,200&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button data-text="Awesome" class="button">
+        <span class="actual-text">&nbsp;Welcome!&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;Welcome!&nbsp;</span>
+    </button>
     <header>
         <div>
             <ul>
@@ -298,7 +302,7 @@
 
             <label class="emailme" for="contact">Email:</label>
             <input type="text" id="contact" name="contact" required>
-
+            
             <input type="submit" value="Send" name="submit">
         </form>
     </body>
@@ -334,10 +338,20 @@
     </script>
 </body>
 
+<footer>
+    <div class="loader">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <div class="text-white d-flex gap-5 justify-content-center p-3">
+            <div>Kenneth Jon Gabriel | 2023 </div>
+        </div>
+        
+    </div>
+    
+</footer>
 
-    <footer class="text-white d-flex gap-5 justify-content-center p-3">
-        <div>&copy;  2023 My Website.</div>
-    </footer>
+    
 
 
   

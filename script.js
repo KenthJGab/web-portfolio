@@ -29,7 +29,7 @@ function startTypingAnimation() {
     }
 
     const typingText = document.querySelector("#typingText");
-    const text = "HELLO, I'M KENNETH JON GABRIEL";
+    const text = "HI, I'M KENNETH JON GABRIEL";
     let textIndex = 0;
 
     function typeText() {

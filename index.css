@@ -283,7 +283,7 @@ div li {
     white-space: nowrap;
     margin: 0;
     animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #typingPosition {
@@ -291,14 +291,13 @@ div li {
     font-size: 15px;
     letter-spacing: 0.10cm;
     line-height: 1.5;
-    margin-top: 10px;
 }
 
 .displaypicture {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5%;
+    padding-left: 7%;
 
 }
 
@@ -317,7 +316,7 @@ div li {
     font-style: oblique;
     font-weight: 900;
     font-size: x-large;
-    margin-top: 7%;
+    margin-top: 1%;
 }
 
 .displaypicture figure img {
@@ -888,11 +887,7 @@ input[type="submit"]:hover {
 }
 
 /* ------------------------Footer-------------------------------------------------------- */
-footer {
-    position: relative;
-    bottom: -20px;
-    font-size: 10px;
-}
+
 .border-div {
     border: 1px solid #333; /* Add a 2px solid border with a color of your choice */
     padding: 10px; /* Add padding for spacing inside the border */
@@ -959,4 +954,3 @@ footer {
         margin-top: 10%;
     }
   }
-

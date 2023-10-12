@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Web Developer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/prof.ico">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,200&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <ul>
+                <li id="Landing"><a href="Landing"><strong><img src="images/icons8-home-40.png" alt=""></strong></a></li>
+                <li id="Project"><a href="Project"><strong><img src="images/icons8-project-management-40.png" alt=""></strong></a></li>
+                <li id="Tools"><a href="Tools"><strong><img src="images/icons8-tools-40 (1).png" alt=""></strong></a></li>
+                <li id="Certificates"><a href="Certificates"><strong><img src="images/certsssss.png" alt=""></strong></a></li>
+                <li id="Contacts"><a href="Contacts"><strong><img src="images/icons8-contact-40 (1).png" alt=""></strong></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ----------------------------LANDING AREA-------------------------- -->
+
+    <section class="displaypicture">
+        <figure>
+            <img src="images/prof.png" alt="displaypicture" id="zoomImage">
+           
+        </figure>
+        <div class="AboutMe">
+            <h1 id="typingText"><strong></strong></h1>
+            <h4 id="typingPosition"></h4>
+            <p class="pl-4 pr-5 pb-0 pt-2 mb-2">
+                As a Computer Engineering graduate from Nueva 
+                Vizcaya State University, I'm passionate about 
+                technology. Enrolling in Zuitt Coding Bootcamp 
+                is a testament to my determination to become 
+                a web developer. This journey is all about 
+                hard work and never giving up. Zuitt is helping 
+                me build a better version of myself in the world 
+                of web development.
+            </p>
+            <p class="pl-4 pr-5 pt-0">
+                I thrive on challenges and am committed to continuous learning, making me 
+                well-prepared to take on the dynamic and ever-evolving field of web development. 
+                I believe that the web is a canvas for creativity, and I am excited to leverage 
+                my skills to create beautiful, user-friendly, and functional websites and applications.
+            </p>
+        </div>
+        <script src="script.js"></script>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const section = document.querySelector(".displaypicture");
+            // Smooth scrolling behavior
+            document.querySelector("#Landing a").addEventListener("click", function (e) {
+                e.preventDefault();
+                section.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
+<!-- -----------------------PROJECT AREA---------Bootstrap-------------------- -->
+<section id="ProjectArea">
+<h1 id="ProjectTitle" class="text-center mt-5">Projects</h1>
+<div id="projectgif" class="row my-5 ">
+   
+    <div class="order-2 order-md-1 col-sm-12 col-md-6 p-2 pb-5">
+        
+        <p class="text-center border">
+            <h4>Frontend Development Projects:</h4>
+            <p>Portfolio Website</p>
+            <p>E-commerce Website</p>
+            <p>Blog Platform</p>
+            <p>Weather App</p>
+            <p>To-Do List Application</p>
+            <p>Social Media Dashboard</p>
+        </p>
+
+    </div>
+    <div class="order-1 order-md-2 col-sm-12 col-md-6 pb-5">
+        <img class="img-fluid" id="apiImg" src="projectimg/back.gif"/>
+    </div>
+</div>
+
+<div id="projectgif" class="row my-5">
+    <div class="order-2 order-md-2 col-sm-12 col-md-6 p-2 pb-5">
+        
+        <p class="text-justify border">
+            <h4>Backend Development Projects:</h4>
+            <p>User Authentication System</p>
+            <p>Blog API</p>
+            <p>E-commerce Backend</p>
+            <p>Task Management System</p>
+            <p>Inventory Management System</p>
+            <p>Chat Application</p>
+        </p>
+
+    </div>
+    <div class="order-md-1 order-1 col-sm-12 col-md-6 pb-5">
+        <img class="img-fluid" id="reactImg"  src="projectimg/end.gif"/>
+    </div>
+</div>
+
+<div id="projectgif" class="row my-5">
+    <div class="order-2 order-md-1 col-sm-12 col-md-6 p-2 pb-5">
+        
+        <p class="text-justify border">
+            <h4>Full-Stack Development Projects:</h4>
+            <p>Social Media Network</p>
+            <p>Task Management App</p>
+            <p>Online Marketplace</p>
+            <p>Booking System</p>
+        </p>
+
+    </div>
+    <div class="order-1 order-md-2 col-sm-12 col-md-6 pb-5">
+        <img class="img-fluid" id="apiImg" src="projectimg/front.gif"/>
+    </div>
+</div>
+<!-- <p class="projectnotmine text-center">"These example projects are not mine; they demonstrate where project links can be placed."</p> -->
+</section>  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const section = document.querySelector("#ProjectArea");
+        // Smooth scrolling behavior
+        document.querySelector("#Project a").addEventListener("click", function (e) {
+            e.preventDefault();
+            section.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+</script>
+
+
+<!-- ---------------------------------Tools --------------------------->
+
+<section class="Frontend-Tools">
+    <h1>Tools</h1>
+    <nav>
+        <ul>
+            <li>
+                <div class="image-container">
+                    <img src="tools/6.svg" alt="VSCode">
+                    <p class="text">VS Code</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="tools/7.svg" alt="">
+                    <p class="text">Sublime</p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <h4 class="mt-5 mb-5 text-center">Text Editors</h4>
+    <nav>
+        <ul>
+            <li>
+                <div class="image-container">
+                    <img src="tools/2.svg" alt="CSS">
+                    <p class="text">CSS</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="tools/3.svg" alt="Bootstrap">
+                    <p class="text">Bootstrap</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="tools/4.svg" alt="HTML">
+                    <p class="text">HTML</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="tools/5.svg" alt="JavaScript">
+                    <p class="text">JavaScript</p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <h4 class="mt-5 mb-5 text-center">Other Tools</h4>
+    <nav>
+        <ul>
+            <li>
+                <div class="image-container">
+                    <img src="tools/3-removebg-preview.png" alt="CSS">
+                    <p class="text">Mathlab</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="tools/4-removebg-preview.png" alt="Bootstrap">
+                    <p class="text">Arduino</p>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+</section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const section = document.querySelector(".Frontend-Tools");
+        document.querySelector("#Tools a").addEventListener("click", function (e) {
+            e.preventDefault();
+            section.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+</script>
+
+<!-- ---------------------------certs -------------------------------->
+
+<section class="certificates">
+    <h1 class="mb-5 mt-5">Certificates</h1>
+    <div class="certs-grid">
+        <div class="certs-container">
+            <img src="certss/boo.jpeg" alt="Image 1">
+        </div>
+        <div class="certs-container">
+            <img src="certss/booa.jpeg" alt="Image 2">
+        </div>
+        <div class="certs-container">
+            <img src="certss/booe.jpeg" alt="Image 3">
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const section = document.querySelector(".certificates");
+        document.querySelector("#Certificates a").addEventListener("click", function (e) {
+            e.preventDefault();
+            section.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+</script>
+
+<!----------------------------- Contacts ------------------------------->
+
+<div class="centered">
+    <h1 id="contactme" class=" contactme mb-5 mt-5 pt-5 text-center">Contacts</h1>
+    <section class="blurry-box">
+        <div class="icon-grid">
+            
+            <a href="https://www.linkedin.com/in/kenneth-jon-gabriel-a882b0293/"target="_blank">
+            <div class="icon"><i class="fas fa-home"></i><img src="contact/icons8-linkedin-50.png" alt="Linkedin"></div>
+            </a>
+            
+            <a href="https://www.facebook.com/KennethPogi.Gabriel/"target="_blank">
+            <div class="icon"><i class="fas fa-envelope"></i><img src="contact/icons8-facebook-50.png" alt=""></div>
+            </a>
+
+            <a href="https://www.instagram.com/i_kenth_i_ken/"target="_blank">
+            <div class="icon"><i class="fas fa-phone"></i><img src="contact/icons8-instagram-50.png" alt=""></div>
+            </a>
+
+            <a href="https://twitter.com/i_kenth_i_ken"target="_blank">
+            <div class="icon"><i class="fas fa-globe"></i><img src="contact/icons8-twitterx-50.png" alt=""></div>
+            </a>
+
+            <a href="https://github.com/KenthJGab"target="_blank">
+            <div class="icon"><i class="fas fa-camera"></i><img src="contact/icons8-github-40.png" alt=""></div>
+            </a> 
+            <a href="https://t.me/kennethjongabrielagustin"target="_blank">
+            <div class="icon"><i class="fas fa-users"></i><img src="contact/icons8-telegram-40.png" alt=""></div>
+            </a>
+        </div>
+    </section>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const section = document.querySelector(".centered");
+
+        // Smooth scrolling behavior
+        document.querySelector("#Contacts a").addEventListener("click", function (e) {
+            e.preventDefault();
+            section.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+</script>
+
+<section class="sendmail">
+    <body class="sendmail">
+        <h3 id="mail" class="text-center mt-5 mb-3">Message me!</h3>
+        <form id="sendMailForm" action="" method="post">
+            <label class="compose" for="message">Compose:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+            <label class="emailme" for="contact">Email:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <input type="submit" value="Send" name="submit">
+        </form>
+    </body>
+</section>
+
+<script>
+    document.getElementById('sendMailForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from actually submitting
+
+        // Add your code here to handle form submission, e.g., sending the message
+
+        // Display the "Message Sent!" alert
+        alert('Message Sent!');
+
+        // Clear the message and email input fields
+        document.getElementById('message').value = ''; // Clear the message input
+        document.getElementById('contact').value = ''; // Clear the email input
+    });
+</script>
+
+
+<body>
+    <div class="splash-screen">
+        <img src="boot/kennethboot.gif" alt="Logo" class="logo">
+    </div>
+
+    <script>
+        // Simulate loading time (you can replace this with your actual loading logic)
+        setTimeout(function() {
+            document.querySelector('.splash-screen').style.display = 'none';
+            document.querySelector('.main-content').style.display = 'block';
+        }, 3000); // Change the time (in milliseconds) as needed
+    </script>
+</body>
+
+
+    <footer class="text-white d-flex gap-5 justify-content-center p-3">
+        <div>&copy;  2023 My Website.</div>
+    </footer>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

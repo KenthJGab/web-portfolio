@@ -41,7 +41,7 @@ function startTypingAnimation() {
     }
 
     // Start the typing animation when the page loads
-    setTimeout(typeText, 3200);
+    setTimeout(typeText, 0);
 
     const typingPosition = document.querySelector("#typingPosition");
     const positionText = "Full Stack Web Developer";
@@ -68,7 +68,7 @@ function startTypingAnimation() {
     setInterval(function () {
         resetTextAnimation();
         resetPositionAnimation();
-    }, 3000);
+    }, 8000);
 }
 
 // Call the startTypingAnimation function when the page loads

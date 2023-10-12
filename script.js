@@ -68,7 +68,7 @@ function startTypingAnimation() {
     setInterval(function () {
         resetTextAnimation();
         resetPositionAnimation();
-    }, 8000);
+    }, 3000);
 }
 
 // Call the startTypingAnimation function when the page loads

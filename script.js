@@ -44,7 +44,7 @@ function startTypingAnimation() {
     setTimeout(typeText, 1);
 
     const typingPosition = document.querySelector("#typingPosition");
-    const positionText = "Full Stack Web Developer";
+    const positionText = "Web Developer";
     const typingSpeed = 200;
 
     function resetPositionAnimation() {

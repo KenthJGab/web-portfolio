@@ -147,12 +147,17 @@ div li {
     justify-content: center;
     position: relative;
     width: 50px;
+    /* Adjust the width to match your logo's size */
     height: 50px;
+    /* Adjust the height to match your logo's size */
     margin-right: 15px;
     margin-top: 3%;
     overflow: hidden;
+    /* Hide any content that exceeds the circular shape */
     border-radius: 50%;
+    /* Make it circular */
     transition: background-color 0.3s;
+    /* Add a transition for smooth color change */
 }
 
 #Certificates a {
@@ -179,11 +184,11 @@ div li {
 
 #certCarousel {
     width: 60%;
-    margin: 0 auto; /* Center the carousel */
+    margin: 0 auto;
 }
 
 .carousel-control-next {
-    color: #007bff; 
+    color: #007bff;
 }
 
 #Contacts {

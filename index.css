@@ -178,6 +178,22 @@ div li {
     background-color: #ffffff;
 }
 
+        /* Custom styles for the certificates section */
+        .certificates {
+            text-align: center;
+        }
+
+        /* Ensure the carousel takes up half of the screen width */
+        #certCarousel {
+            width: 80%;
+            margin: 0 auto; /* Center the carousel */
+        }
+
+        /* Make the next button blue */
+        .carousel-control-next {
+            color: #007bff; /* Blue color for the next button */
+        }
+
 #Contacts {
     display: inline-flex;
     align-items: center;

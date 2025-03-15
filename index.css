@@ -971,3 +971,54 @@ input[type="submit"]:hover {
       transform: scaleY(1);
     }
   }
+
+          .figma-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+        }
+        .figma-title {
+            color: #ADD8E6;
+            text-size-adjust: 10px;
+        }
+        .figma-list {
+            list-style: none;
+            padding: 0;
+        }
+        .figma-item {
+            margin: 10px 0;
+        }
+        .figma-link {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            transition: 0.3s;
+            display: block;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .figma-link:hover {
+            color: #0056b3;
+        }
+        .resume-area {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .resume-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .resume-button:hover {
+        background-color: #00b336;
+    }
